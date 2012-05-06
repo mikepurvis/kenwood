@@ -1,0 +1,177 @@
+EESchema Schematic File Version 2  date Sunday, May 06, 2012 01:54:04 pm
+LIBS:atmel
+LIBS:device
+LIBS:regul
+LIBS:power
+LIBS:MAX4582
+LIBS:conn
+LIBS:special
+LIBS:MCP42010
+LIBS:DS1882
+LIBS:display
+LIBS:interface
+LIBS:BP5037
+LIBS:MCP23017
+LIBS:kenwood-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 4 4
+Title ""
+Date "6 may 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 5600 3550
+Wire Wire Line
+	5600 3550 7350 3550
+Wire Wire Line
+	7350 3550 7350 4050
+Wire Wire Line
+	5650 4050 5600 4050
+Wire Wire Line
+	5600 4050 5600 3300
+Wire Wire Line
+	5600 2150 5600 1900
+Wire Wire Line
+	3350 4150 3750 4150
+Connection ~ 3750 4800
+Wire Wire Line
+	5650 5600 7750 5600
+Wire Wire Line
+	5650 5400 7650 5400
+Wire Wire Line
+	5650 5200 7550 5200
+Wire Wire Line
+	5650 5000 7450 5000
+Wire Wire Line
+	7350 4650 7700 4650
+Wire Wire Line
+	7700 4650 7700 5500
+Wire Wire Line
+	7350 4450 7600 4450
+Wire Wire Line
+	7600 4450 7600 5300
+Wire Wire Line
+	7350 4250 7500 4250
+Wire Wire Line
+	7500 4250 7500 5100
+Wire Wire Line
+	7450 5000 7450 4150
+Wire Wire Line
+	7450 4150 7350 4150
+Wire Wire Line
+	7550 5200 7550 4350
+Wire Wire Line
+	7550 4350 7350 4350
+Wire Wire Line
+	7650 5400 7650 4550
+Wire Wire Line
+	7650 4550 7350 4550
+Wire Wire Line
+	7750 5600 7750 4750
+Wire Wire Line
+	7750 4750 7350 4750
+Wire Wire Line
+	7500 5100 5650 5100
+Wire Wire Line
+	7600 5300 5650 5300
+Wire Wire Line
+	7700 5500 5650 5500
+Wire Wire Line
+	3750 4600 3750 4950
+Connection ~ 3750 4700
+Wire Wire Line
+	3700 2350 5300 2350
+Wire Wire Line
+	5600 2800 5600 2550
+$Comp
+L R R?
+U 1 1 4FA5C8F6
+P 5600 3050
+F 0 "R?" V 5680 3050 50  0000 C CNN
+F 1 "R" V 5600 3050 50  0000 C CNN
+	1    5600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 4FA5C8C1
+P 5500 2350
+F 0 "Q?" H 5510 2520 60  0000 R CNN
+F 1 "MOSFET_N" H 5510 2200 60  0000 R CNN
+	1    5500 2350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3350 4150 0    60   Input ~ 0
+~RESET
+$Comp
+L GND #PWR?
+U 1 1 4FA5C870
+P 3750 4950
+F 0 "#PWR?" H 3750 4950 30  0001 C CNN
+F 1 "GND" H 3750 4880 30  0001 C CNN
+	1    3750 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4FA5C868
+P 4700 6400
+F 0 "#PWR?" H 4700 6400 30  0001 C CNN
+F 1 "GND" H 4700 6330 30  0001 C CNN
+	1    4700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4F9DFE96
+P 4700 3700
+F 0 "#PWR?" H 4700 3790 20  0001 C CNN
+F 1 "+5V" H 4700 3790 30  0000 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4F9DFE8C
+P 5600 1900
+F 0 "#PWR?" H 5600 1990 20  0001 C CNN
+F 1 "+5V" H 5600 1990 30  0000 C CNN
+	1    5600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP23017 U?
+U 1 1 4F9DF854
+P 4700 5050
+F 0 "U?" H 4150 6150 50  0000 C CNN
+F 1 "MCP23017" H 5150 3950 50  0000 C CNN
+F 2 "MODULE" H 4200 3950 50  0001 C CNN
+F 3 "DOCUMENTATION" H 4700 5000 50  0001 C CNN
+	1    4700 5050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5650 5700
+NoConn ~ 5650 4850
+Text HLabel 3700 2350 0    60   Input ~ 0
+BRIGHT
+Text HLabel 3750 5550 0    60   BiDi ~ 0
+SDA
+Text HLabel 3750 5650 0    60   Input ~ 0
+SCL
+$Comp
+L DA04-11 AFF1
+U 1 1 4F8F7EA5
+P 6500 4450
+F 0 "AFF1" H 6500 4950 60  0000 C CNN
+F 1 "DA04-11" H 6500 4000 60  0000 C CNN
+	1    6500 4450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

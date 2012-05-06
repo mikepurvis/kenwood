@@ -1,0 +1,363 @@
+EESchema Schematic File Version 2  date Wednesday, April 18, 2012 09:42:49 pm
+LIBS:atmel
+LIBS:device
+LIBS:regul
+LIBS:power
+LIBS:MAX4582
+LIBS:conn
+LIBS:special
+LIBS:MCP42010
+LIBS:DS1882
+LIBS:kenwood-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 3
+Title ""
+Date "19 apr 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4950 3950 6350 3950
+Wire Wire Line
+	6350 3950 6350 3550
+Wire Wire Line
+	6350 3550 6950 3550
+Wire Wire Line
+	6950 3150 4950 3150
+Wire Wire Line
+	6950 2950 4950 2950
+Wire Wire Line
+	1400 2050 2950 2050
+Wire Wire Line
+	4950 4750 7050 4750
+Connection ~ 7000 4450
+Wire Wire Line
+	7000 4450 7000 4550
+Wire Wire Line
+	7000 4550 7050 4550
+Wire Wire Line
+	3300 1300 3300 1450
+Wire Wire Line
+	3650 1750 3650 1650
+Connection ~ 2500 2050
+Wire Wire Line
+	1650 5100 1650 4950
+Connection ~ 1650 4950
+Wire Wire Line
+	1150 4550 1350 4550
+Wire Wire Line
+	1950 4550 2100 4550
+Connection ~ 1700 2050
+Wire Wire Line
+	1700 2150 1700 1800
+Wire Wire Line
+	1700 1300 1700 1050
+Connection ~ 3750 5850
+Wire Wire Line
+	3850 5750 3850 5850
+Wire Wire Line
+	3650 5750 3650 5950
+Connection ~ 3750 1650
+Wire Wire Line
+	3850 1650 3850 1750
+Wire Wire Line
+	3750 1750 3750 1650
+Wire Wire Line
+	4050 1750 4050 1650
+Wire Wire Line
+	4050 1650 3650 1650
+Connection ~ 3850 1650
+Wire Wire Line
+	3750 5850 3750 5750
+Connection ~ 3650 5850
+Wire Wire Line
+	3950 5750 3950 5850
+Wire Wire Line
+	3950 5850 3650 5850
+Connection ~ 3850 5850
+Wire Wire Line
+	1700 3300 1700 3150
+Wire Wire Line
+	1150 4950 2100 4950
+Wire Wire Line
+	2500 2050 2500 1300
+Wire Wire Line
+	3300 1100 3300 950 
+Wire Wire Line
+	7050 4450 6700 4450
+Wire Wire Line
+	6700 4450 6700 4600
+Wire Wire Line
+	7050 4650 6900 4650
+Wire Wire Line
+	6900 4650 6900 4300
+Wire Wire Line
+	4950 4850 7050 4850
+Wire Wire Line
+	2950 3250 2300 3250
+Wire Wire Line
+	6950 3050 4950 3050
+Wire Wire Line
+	4950 3850 6250 3850
+Wire Wire Line
+	6250 3850 6250 3450
+Wire Wire Line
+	6250 3450 6950 3450
+$Sheet
+S 6950 2500 1200 1300
+U 4F8E1AA2
+F0 "Audio Pipeline" 60
+F1 "audio_pipeline.sch" 60
+F2 "MUX_ENABLE" I L 6950 3150 60 
+F3 "MUX_B" I L 6950 3050 60 
+F4 "MUX_A" I L 6950 2950 60 
+F5 "SCL" I L 6950 3450 60 
+F6 "SDA" B L 6950 3550 60 
+$EndSheet
+$Sheet
+S 550  8850 8350 2150
+U 4F8E1591
+F0 "Sheet4F8E1590" 60
+F1 "display.sch" 60
+$EndSheet
+Text Label 4950 5050 0    60   ~ 0
+CFG_BUTTON
+$Comp
+L +5V #PWR?
+U 1 1 4F8E143A
+P 2300 2750
+F 0 "#PWR?" H 2300 2900 40  0001 C CNN
+F 1 "+5V" H 2300 2870 40  0000 C CNN
+	1    2300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8E1434
+P 2300 3750
+F 0 "#PWR?" H 2300 3825 40  0001 C CNN
+F 1 "GND" H 2300 3775 40  0001 C CNN
+	1    2300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 4F8E13B2
+P 2300 3500
+F 0 "R?" V 2380 3500 50  0000 C CNN
+F 1 "1K" V 2300 3500 50  0000 C CNN
+	1    2300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 4F8E1395
+P 2300 3000
+F 0 "R?" V 2380 3000 50  0000 C CNN
+F 1 "9K" V 2300 3000 50  0000 C CNN
+	1    2300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA164A-A IC?
+U 1 1 4F8E0522
+P 3950 3750
+F 0 "IC?" H 3150 5580 50  0000 L BNN
+F 1 "ATMEGA164A-A" H 4150 1850 50  0000 L BNN
+F 2 "TQFP44" H 3300 1900 50  0001 C CNN
+	1    3950 3750
+	1    0    0    -1  
+$EndComp
+Text Label 1000 2050 2    60   ~ 0
+DTR
+$Comp
+L C C3
+U 1 1 4F897C0E
+P 1200 2050
+F 0 "C3" H 1250 2150 50  0000 L CNN
+F 1 "0.1u" H 1250 1950 50  0000 L CNN
+	1    1200 2050
+	0    -1   -1   0   
+$EndComp
+Text Label 7050 4950 2    60   ~ 0
+DTR
+$Comp
+L +5V #PWR?
+U 1 1 4F897B54
+P 6900 4300
+F 0 "#PWR?" H 6900 4390 20  0001 C CNN
+F 1 "+5V" H 6900 4390 30  0000 C CNN
+	1    6900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F897B45
+P 6700 4600
+F 0 "#PWR?" H 6700 4600 30  0001 C CNN
+F 1 "GND" H 6700 4530 30  0001 C CNN
+	1    6700 4600
+	1    0    0    -1  
+$EndComp
+Text Label 4950 3650 0    60   ~ 0
+SCK
+Text Label 4950 3550 0    60   ~ 0
+MISO
+Text Label 4950 3450 0    60   ~ 0
+MOSI
+Text Label 2500 1200 2    60   ~ 0
+SCK
+Text Label 2500 1100 2    60   ~ 0
+MISO
+Text Label 3300 1200 0    60   ~ 0
+MOSI
+$Comp
+L CONN_6 SERIAL
+U 1 1 4F896F9C
+P 7400 4700
+F 0 "SERIAL" V 7350 4700 60  0000 C CNN
+F 1 "CONN_6" V 7450 4700 60  0000 C CNN
+	1    7400 4700
+	1    0    0    -1  
+$EndComp
+Text Label 4950 4950 0    60   ~ 0
+IR_IN
+Text Label 4950 5250 0    60   ~ 0
+VOL_ENC_B
+Text Label 4950 5150 0    60   ~ 0
+VOL_ENC_A
+Text Label 4950 3150 0    60   ~ 0
+AMP_ENABLE
+$Comp
+L CONN_3X2 ICSP
+U 1 1 4F88E4B9
+P 2900 1250
+F 0 "ICSP" H 2900 1500 50  0000 C CNN
+F 1 "CONN_3X2" V 2900 1300 40  0000 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+Text Label 1950 4550 0    60   ~ 0
+XTAL2
+Text Label 1350 4550 2    60   ~ 0
+XTAL1
+$Comp
+L GND #PWR?
+U 1 1 4F86BB5A
+P 1650 5100
+F 0 "#PWR?" H 1650 5175 40  0001 C CNN
+F 1 "GND" H 1650 5125 40  0001 C CNN
+	1    1650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 4F86BAC4
+P 1150 4750
+F 0 "C1" H 1200 4850 50  0000 L CNN
+F 1 "22P" H 1200 4650 50  0000 L CNN
+	1    1150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 4F86BAB8
+P 2100 4750
+F 0 "C2" H 2150 4850 50  0000 L CNN
+F 1 "22P" H 2150 4650 50  0000 L CNN
+	1    2100 4750
+	1    0    0    -1  
+$EndComp
+Text Label 2950 2850 2    60   ~ 0
+XTAL1
+Text Label 2950 2450 2    60   ~ 0
+XTAL2
+$Comp
+L GND #PWR?
+U 1 1 4F865359
+P 1700 3300
+F 0 "#PWR?" H 1700 3375 40  0001 C CNN
+F 1 "GND" H 1700 3325 40  0001 C CNN
+	1    1700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW1
+U 1 1 4F8652D3
+P 1700 2650
+F 0 "SW1" H 1700 2750 70  0000 C CNN
+F 1 "SPST" H 1700 2550 70  0000 C CNN
+	1    1700 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CRYSTAL Q1
+U 1 1 4F8650FF
+P 1650 4550
+F 0 "Q1" H 1650 4700 60  0000 C CNN
+F 1 "CRYSTAL" H 1650 4400 60  0000 C CNN
+	1    1650 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 4F86511C
+P 1700 1550
+F 0 "R1" V 1780 1550 50  0000 C CNN
+F 1 "10K" V 1700 1550 50  0000 C CNN
+	1    1700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4F8645FC
+P 1700 1050
+F 0 "#PWR?" H 1700 1200 40  0001 C CNN
+F 1 "+5V" H 1700 1170 40  0000 C CNN
+	1    1700 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4F84C247
+P 4050 1650
+F 0 "#PWR?" H 4050 1800 40  0001 C CNN
+F 1 "+5V" H 4050 1770 40  0000 C CNN
+	1    4050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 4F8254DC
+P 3300 950
+F 0 "#PWR?" H 3300 1100 40  0001 C CNN
+F 1 "+5V" H 3300 1070 40  0000 C CNN
+	1    3300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8254C1
+P 3300 1450
+F 0 "#PWR?" H 3300 1525 40  0001 C CNN
+F 1 "GND" H 3300 1475 40  0001 C CNN
+	1    3300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4F8253B0
+P 3650 5950
+F 0 "#PWR?" H 3650 6025 40  0001 C CNN
+F 1 "GND" H 3650 5975 40  0001 C CNN
+	1    3650 5950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
