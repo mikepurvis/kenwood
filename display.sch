@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sunday, May 06, 2012 01:54:04 pm
+EESchema Schematic File Version 2  date Saturday, May 26, 2012 09:22:34 pm
 LIBS:atmel
 LIBS:device
 LIBS:regul
@@ -12,6 +12,7 @@ LIBS:display
 LIBS:interface
 LIBS:BP5037
 LIBS:MCP23017
+LIBS:hdsp
 LIBS:kenwood-cache
 EELAYER 25  0
 EELAYER END
@@ -19,7 +20,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 4 4
 Title ""
-Date "6 may 2012"
+Date "27 may 2012"
 Rev ""
 Comp ""
 Comment1 ""
