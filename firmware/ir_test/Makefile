@@ -57,11 +57,11 @@ FORMAT = ihex
 
 
 # Target file name (without extension).
-TARGET = basic-out-atmega328
+TARGET = firmware
 
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC = $(TARGET).c
+SRC = main.c ir.c
 
 
 # List Assembler source files here.
