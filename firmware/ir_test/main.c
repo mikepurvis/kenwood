@@ -26,7 +26,18 @@
 #define cbi(var, mask)   (var &= (uint8_t)~(1 << (mask)))
 
 #define STATUS_LED 0
- 
+
+void btn_power(void) { printf("PWR\n"); }
+void btn_vol_up(void) { printf("V_UP\n"); }
+void btn_vol_dn(void) { printf("V_DN\n"); }
+
+const struct ir_callback_s ir_cbs[] = {
+  { "\x1\x2\x2\x4\x2\x1\x2\x4\x1\x1", btn_power },
+  { "\x2\x3\x3", btn_vol_up },
+  { "\x1\x1\x3\x3", btn_vol_dn },
+  { 0, 0 }
+};
+
 
 //Define functions
 //======================
@@ -39,13 +50,14 @@ static FILE mystdout = FDEV_SETUP_STREAM(uart_putchar, NULL, _FDEV_SETUP_WRITE);
 void delay_ms(uint16_t x); // general purpose delay
 //======================
 
+
 int main (void) {
 	  uint16_t x = 0;
     uint8_t channel = 0;
 	
     uart_init(); //Setup IO pins and defaults
     adc_init();
-    ir_init();
+    ir_init(ir_cbs);
     
     PORTD=0x00;
     DDRD=0b00000010;
