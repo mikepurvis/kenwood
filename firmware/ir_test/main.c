@@ -16,6 +16,7 @@
 #include <util/delay.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include "ir.h"
 
 #define BAUD 38400
   //9600
@@ -25,24 +26,7 @@
 #define cbi(var, mask)   (var &= (uint8_t)~(1 << (mask)))
 
 #define STATUS_LED 0
-
-volatile uint8_t timer_volatile;
-volatile uint16_t change_volatile;
-
-/*volatile uint8_t _stream[12];
-volatile uint8_t _stream_index;
-volatile uint8_t _stream_i;
-
-volatile enum {
-  IR_STATE_NONE,
-  IR_STATE_INITIAL,
-  IR_STATE_
-} _state;*/
-
-uint8_t pulse_index;
-uint8_t pulses_done;
-uint16_t pulse_widths[220];
-
+ 
 
 //Define functions
 //======================
@@ -67,9 +51,6 @@ int main (void) {
     DDRD=0b00000010;
     sei();
 
-    pulse_index = 0;
-    pulses_done = 0;
-
     while(1) {
         // Select channel for conversion
         /*ADMUX &= 0xE0;  // 1110 0000
@@ -86,52 +67,17 @@ int main (void) {
 		    _delay_ms(25);
 		    PORTB = 0x00;*/
 		    //_delay_ms(25);
-        if (pulses_done) {
+        /*if (pulses_done) {
             for (uint8_t n = 0; n < pulse_index; n++) {
                 printf("%d ", pulse_widths[n]);
             }
             printf("\n");
             pulses_done = 0;
-        }
+        }*/
     }
    
     return(0);
 }
-
-
-void ir_init (void) {
-    TIMSK1 = _BV(OCIE1A);
-    sbi(TCCR1B, WGM12);  // CTC mode, TOP = OCR1A
-    OCR1A = 200; //F_CPU; // / 5 * 8;  // count up to TOP (timeout on bit arrival)
-
-    // Falling edge triggers interrupt.
-    // (Changes to rising edge once a stream has begun)
-    sbi(EICRA, ISC01);
-    //sbi(EICRA, ISC00);
-    
-    // Enable ext. interrupt.
-    sbi(EIMSK, INT0);
-}
-
-
-ISR(TIMER1_COMPA_vect) {
-    // timer_volatile++;
-    cbi(TCCR1B, CS12);
-    //cbi(TCCR1B, CS10);
-    pulses_done = 1;
-}
-
-ISR(INT0_vect) {
-    if (pulses_done) {
-        // Unrecovered stream; ignore further input.
-        return;
-    }
-    sbi(TCCR1B, CS12);  // 8 prescale (p139)
-    pulse_widths[pulse_index] = TCNT1; // = 0;
-    TCNT1 = 0;
-    pulse_index++;
-}
-
 
 void uart_init (void) {
     //1 = output, 0 = input
