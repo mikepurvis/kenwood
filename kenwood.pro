@@ -1,4 +1,4 @@
-update=Saturday, May 26, 2012 10:06:58 pm
+update=Friday, June 22, 2012 09:59:24 am
 last_client=eeschema
 [general]
 version=1
@@ -87,5 +87,4 @@ LibName10=display
 LibName11=interface
 LibName12=BP5037
 LibName13=MCP23017
-LibName14=hdsp
-LibName15=lumex
+LibName14=lumex
