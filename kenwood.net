@@ -1,83 +1,53 @@
-# EESchema Netlist Version 1.1 created  Sunday, May 13, 2012 09:06:40 pm
+# EESchema Netlist Version 1.1 created  6/5/2012 10:30:18 PM
 (
  ( /4F920A8B/4F920AFF $noname$ AC_L1 CONN_1
-  ( 1 N-000073 )
+  ( 1 N-000065 )
  )
  ( /4F920A8B/4F920B29 $noname$ AC_N1 CONN_1
   ( 1 GND )
  )
- ( /4F8E1591/4F8F7EA5 $noname$ AFF1 DA04-11
-  ( 1 ? )
-  ( 2 ? )
-  ( 3 ? )
-  ( 4 ? )
-  ( 5 ? )
-  ( 6 ? )
-  ( 7 ? )
-  ( 8 ? )
-  ( 9 ? )
-  ( 10 ? )
-  ( 11 ? )
-  ( 12 ? )
-  ( 13 ? )
-  ( 14 ? )
-  ( 15 ? )
-  ( 16 ? )
- )
- ( /4F920A8B/4F920B3E $noname$ AMP_RELAY+1 CONN_1
-  ( 1 +12V )
- )
- ( /4F920A8B/4F920B5B $noname$ AMP_RELAY-1 CONN_1
-  ( 1 N-000072 )
- )
- ( /4F8E1AA2/4F8E0E20 $noname$ AUDIO0_L1 CONN_1
-  ( 1 N-000059 )
- )
- ( /4F8E1AA2/4F8E0F34 $noname$ AUDIO0_R1 CONN_1
-  ( 1 N-000052 )
- )
- ( /4F8E1AA2/4F8E0EB9 $noname$ AUDIO1_L1 CONN_1
-  ( 1 N-000055 )
- )
- ( /4F8E1AA2/4F8E0F43 $noname$ AUDIO1_R1 CONN_1
-  ( 1 N-000051 )
- )
- ( /4F8E1AA2/4F8E0EBE $noname$ AUDIO2_L1 CONN_1
-  ( 1 N-000054 )
- )
- ( /4F8E1AA2/4F8E0F45 $noname$ AUDIO2_R1 CONN_1
-  ( 1 N-000050 )
- )
- ( /4F8E1AA2/4F8E0EE4 $noname$ AUDIO3_L1 CONN_1
-  ( 1 N-000053 )
- )
- ( /4F8E1AA2/4F8E0F47 $noname$ AUDIO3_R1 CONN_1
-  ( 1 N-000049 )
- )
  ( /4F8E1AA2/4F8F676F $noname$ AUDIO_GND1 CONN_1
   ( 1 GND )
  )
- ( /4F8E1AA2/4F8E0B18 $noname$ AUDIO_OUT_L1 CONN_1
-  ( 1 N-000058 )
+ ( /4F8E1AA2/4F8E0E20 $noname$ AUDIO_L0 CONN_1
+  ( 1 /Audio_Pipeline/AUDIO0_MONITOR )
  )
- ( /4F8E1AA2/4F8E0B2F $noname$ AUDIO_OUT_R1 CONN_1
-  ( 1 N-000057 )
+ ( /4F8E1AA2/4F8E0EB9 $noname$ AUDIO_L1 CONN_1
+  ( 1 /Audio_Pipeline/AUDIO1_MONITOR )
+ )
+ ( /4F8E1AA2/4F8E0EBE $noname$ AUDIO_L2 CONN_1
+  ( 1 /Audio_Pipeline/AUDIO2_MONITOR )
+ )
+ ( /4F8E1AA2/4F8E0EE4 $noname$ AUDIO_L3 CONN_1
+  ( 1 /Audio_Pipeline/AUDIO3_MONITOR )
+ )
+ ( /4F8E1AA2/4F8E0F34 $noname$ AUDIO_R0 CONN_1
+  ( 1 N-000053 )
+ )
+ ( /4F8E1AA2/4F8E0F43 $noname$ AUDIO_R1 CONN_1
+  ( 1 N-000049 )
+ )
+ ( /4F8E1AA2/4F8E0F45 $noname$ AUDIO_R2 CONN_1
+  ( 1 N-000052 )
+ )
+ ( /4F8E1AA2/4F8E0F47 $noname$ AUDIO_R3 CONN_1
+  ( 1 N-000048 )
  )
  ( /4F86BAC4 $noname$ C1 22P
   ( 1 GND )
-  ( 2 N-000022 )
+  ( 2 /XTAL2 )
  )
  ( /4F86BAB8 $noname$ C2 22P
   ( 1 GND )
-  ( 2 N-000027 )
+  ( 2 /XTAL1 )
  )
  ( /4F897C0E $noname$ C3 0.1u
-  ( 1 /DTR )
-  ( 2 N-000031 )
+  ( 1 N-000026 )
+  ( 2 /RESET )
  )
  ( /4F91F5F1 $noname$ C4 4.7u
   ( 1 GND )
-  ( 2 N-000028 )
+  ( 2 N-000002 )
  )
  ( /4F920A8B/4F94A341 $noname$ C5 C
   ( 1 +12V )
@@ -92,23 +62,23 @@
   ( 2 GND )
  )
  ( /4F920A8B/4F94A2BB $noname$ C8 C
-  ( 1 N-000077 )
+  ( 1 N-000069 )
   ( 2 GND )
  )
  ( /4F920A8B/4F94A7B8 $noname$ C9 C
-  ( 1 N-000063 )
-  ( 2 N-000065 )
+  ( 1 N-000057 )
+  ( 2 N-000063 )
  )
  ( /4F920A8B/4F921FF1 $noname$ C10 C
   ( 1 N-000067 )
   ( 2 GND )
  )
  ( /4F920A8B/4F94A7B6 $noname$ C11 C
-  ( 1 N-000065 )
+  ( 1 N-000063 )
   ( 2 GND )
  )
  ( /4F920A8B/4F94A2ED $noname$ C12 C
-  ( 1 N-000078 )
+  ( 1 N-000072 )
   ( 2 GND )
  )
  ( /4F920A8B/4F94A7B0 $noname$ C13 C
@@ -119,119 +89,175 @@
   ( 1 +5V )
   ( 2 GND )
  )
+ ( /4F920A8B/4F920B3E $noname$ CONN1 AMP_RELAY_1
+  ( 1 +12V )
+ )
+ ( /4F920A8B/4F920B5B $noname$ CONN2 CONN_1
+  ( 1 N-000060 )
+ )
  ( /4F920A8B/4F921FC4 $noname$ D1 DIODE
-  ( 1 N-000073 )
+  ( 1 N-000065 )
   ( 2 N-000066 )
  )
  ( /4F920A8B/4F94A19C $noname$ D2 ZENER
   ( 1 GND )
-  ( 2 N-000071 )
+  ( 2 N-000062 )
  )
  ( /4F920A8B/4F94A7BF $noname$ D3 ZENER
-  ( 1 N-000065 )
-  ( 2 N-000060 )
+  ( 1 N-000063 )
+  ( 2 N-000058 )
  )
  ( /4F920A8B/4F93446D $noname$ D4 DIODE
-  ( 1 N-000072 )
+  ( 1 N-000060 )
   ( 2 +12V )
  )
  ( /4F920A8B/4F922068 $noname$ F1 FUSE
   ( 1 N-000067 )
-  ( 2 N-000069 )
+  ( 2 N-000068 )
  )
- ( /4F8F6DBF TQFP32 IC1 ATMEGA168A-A
-  ( 1 ? )
-  ( 2 ? )
-  ( 3 GND )
-  ( 4 +5V )
-  ( 5 GND )
-  ( 6 +5V )
-  ( 7 N-000027 )
-  ( 8 ? )
-  ( 9 ? )
-  ( 10 ? )
+ ( /4FC169C5 TQFP44 IC1 ATMEGA164PA-A
+  ( 1 /MOSI )
+  ( 2 /MISO )
+  ( 3 /SCK )
+  ( 4 N-000004 )
+  ( 5 +5V )
+  ( 6 GND )
+  ( 7 /XTAL2 )
+  ( 8 /XTAL1 )
+  ( 9 /RX )
+  ( 10 /TX )
   ( 11 ? )
-  ( 12 /Power_Supply/AMP_ENABLE )
-  ( 13 /Audio_Pipeline/MUX_A )
-  ( 14 /Audio_Pipeline/MUX_B )
-  ( 15 /MOSI )
-  ( 16 /MISO )
-  ( 17 /SCK )
-  ( 18 +5V )
-  ( 19 ? )
-  ( 20 N-000009 )
-  ( 21 GND )
-  ( 22 ? )
-  ( 23 /Audio_Pipeline/AUDIO0_MONITOR )
-  ( 24 /Audio_Pipeline/AUDIO1_MONITOR )
-  ( 25 /Audio_Pipeline/AUDIO2_MONITOR )
-  ( 26 /Audio_Pipeline/AUDIO3_MONITOR )
-  ( 27 /Audio_Pipeline/SDA )
-  ( 28 /Display/SCL )
-  ( 29 N-000031 )
-  ( 30 N-000023 )
-  ( 31 N-000024 )
+  ( 12 N-000008 )
+  ( 13 /SEG_0 )
+  ( 14 /SEG_1 )
+  ( 15 ? )
+  ( 16 ? )
+  ( 17 +5V )
+  ( 18 GND )
+  ( 19 /Audio_Pipeline/SCL )
+  ( 20 /Audio_Pipeline/SDA )
+  ( 21 /LED_C )
+  ( 22 /LED_D )
+  ( 23 /LED_E )
+  ( 24 /LED_F )
+  ( 25 /LED_G )
+  ( 26 /LED_DP )
+  ( 27 +5V )
+  ( 28 GND )
+  ( 29 N-000028 )
+  ( 30 ? )
+  ( 31 ? )
   ( 32 ? )
+  ( 33 ? )
+  ( 34 /Audio_Pipeline/AUDIO3_MONITOR )
+  ( 35 /Audio_Pipeline/AUDIO2_MONITOR )
+  ( 36 /Audio_Pipeline/AUDIO1_MONITOR )
+  ( 37 /Audio_Pipeline/AUDIO0_MONITOR )
+  ( 38 +5V )
+  ( 39 GND )
+  ( 40 /Power_Supply/AMP_ENABLE )
+  ( 41 ? )
+  ( 42 ? )
+  ( 43 ? )
+  ( 44 ? )
  )
- ( /4F88E4B9 $noname$ ICSP1 CONN_3X2
+ ( /4F88E4B9 pin_array_3x2 ICSP1 CONN_3X2
   ( 1 /MISO )
   ( 2 +5V )
   ( 3 /SCK )
   ( 4 /MOSI )
-  ( 5 N-000031 )
+  ( 5 /RESET )
   ( 6 GND )
  )
  ( /4F920A8B/4F921F53 $noname$ L1 INDUCTOR
-  ( 1 N-000068 )
-  ( 2 N-000076 )
+  ( 1 N-000064 )
+  ( 2 N-000075 )
  )
  ( /4F920A8B/4F94A1B4 $noname$ L2 INDUCTOR
-  ( 1 N-000071 )
-  ( 2 N-000078 )
+  ( 1 N-000062 )
+  ( 2 N-000072 )
  )
  ( /4F920A8B/4F94A7BE $noname$ L3 INDUCTOR
-  ( 1 N-000060 )
+  ( 1 N-000058 )
   ( 2 GND )
  )
  ( /4F920A8B/4F94A7B1 $noname$ L4 INDUCTOR
-  ( 1 N-000065 )
+  ( 1 N-000063 )
   ( 2 -5V )
  )
  ( /4F920A8B/4F94A6E0 $noname$ L5 INDUCTOR
-  ( 1 N-000078 )
+  ( 1 N-000072 )
   ( 2 +5V )
  )
- ( /4F8650FF $noname$ Q1 CRYSTAL
-  ( 1 N-000027 )
-  ( 2 N-000022 )
+ ( /4FC18F71 LDD-A812 LDD1 LDD-A812RI
+  ( 1 /LED_E )
+  ( 2 /LED_D )
+  ( 3 /LED_C )
+  ( 4 /LED_DP )
+  ( 5 /LED_E )
+  ( 6 /LED_D )
+  ( 7 /LED_G )
+  ( 8 /LED_C )
+  ( 9 /LED_DP )
+  ( 10 /Audio_Pipeline/SDA )
+  ( 11 /Audio_Pipeline/SCL )
+  ( 12 /LED_F )
+  ( 13 N-000036 )
+  ( 14 N-000034 )
+  ( 15 /Audio_Pipeline/SDA )
+  ( 16 /Audio_Pipeline/SCL )
+  ( 17 /LED_G )
+  ( 18 /LED_F )
+ )
+ ( /4F8E1AA2/4F8E0B18 $noname$ OUT1 CONN_1
+  ( 1 N-000054 )
+ )
+ ( /4F8E1AA2/4F8E0B2F $noname$ OUT2 CONN_1
+  ( 1 N-000055 )
+ )
+ ( /4FC20C6A $noname$ P1 CONN_2
+  ( 1 N-000008 )
+  ( 2 GND )
+ )
+ ( /4F8650FF HC-49V Q1 CRYSTAL
+  ( 1 /XTAL1 )
+  ( 2 /XTAL2 )
  )
  ( /4F920A8B/4F93441A $noname$ Q2 NPN
   ( 1 GND )
-  ( 2 N-000074 )
-  ( 3 N-000072 )
+  ( 2 N-000071 )
+  ( 3 N-000060 )
  )
- ( /4F86511C $noname$ R1 10K
+ ( /4FCEBD74 SOT23_6 Q3 DUAL_MOS_P
+  ( 1 /SEG_0 )
+  ( 2 N-000036 )
+  ( 3 /SEG_1 )
+  ( 4 +5V )
+  ( 5 N-000034 )
+  ( 6 +5V )
+ )
+ ( /4F86511C SM0603_Resistor R1 10K
   ( 1 +5V )
-  ( 2 N-000031 )
+  ( 2 /RESET )
  )
- ( /4F91F024 $noname$ R2 10K
-  ( 1 N-000026 )
+ ( /4F91F024 SM0603_Resistor R2 10K
+  ( 1 N-000003 )
   ( 2 GND )
  )
- ( /4F8E1395 $noname$ R3 9K
+ ( /4F8E1395 SM0603_Resistor R3 9K
   ( 1 +5V )
-  ( 2 N-000009 )
+  ( 2 N-000028 )
  )
- ( /4F8E13B2 $noname$ R4 1K
-  ( 1 N-000009 )
+ ( /4F8E13B2 SM0603_Resistor R4 1K
+  ( 1 N-000028 )
   ( 2 GND )
  )
- ( /4F920A8B/4F94A11A $noname$ R5 R
-  ( 1 N-000075 )
+ ( /4F920A8B/4F94A11A SM0603_Resistor R5 R
+  ( 1 N-000070 )
   ( 2 +12V )
  )
  ( /4F920A8B/4F94A7C0 $noname$ R6 R
-  ( 1 N-000062 )
+  ( 1 N-000061 )
   ( 2 +12V )
  )
  ( /4F920A8B/4F92202A $noname$ R7 R
@@ -239,132 +265,124 @@
   ( 2 N-000067 )
  )
  ( /4F920A8B/4F94A7BC $noname$ R8 R
-  ( 1 N-000065 )
-  ( 2 N-000065 )
+  ( 1 N-000063 )
+  ( 2 N-000063 )
  )
  ( /4F920A8B/4F94A7BB $noname$ R9 R
-  ( 1 N-000065 )
+  ( 1 N-000063 )
   ( 2 GND )
  )
  ( /4F920A8B/4F94A209 $noname$ R10 R
-  ( 1 N-000078 )
-  ( 2 N-000070 )
+  ( 1 N-000072 )
+  ( 2 N-000059 )
  )
  ( /4F920A8B/4F94A213 $noname$ R11 R
-  ( 1 N-000070 )
+  ( 1 N-000059 )
   ( 2 GND )
  )
  ( /4F920A8B/4F9343E4 $noname$ R12 R
   ( 1 /Power_Supply/AMP_ENABLE )
-  ( 2 N-000074 )
+  ( 2 N-000071 )
  )
- ( /4F8E1AA2/4F8E0FA7 $noname$ RP1 1K
-  ( 1 N-000059 )
-  ( 2 N-000052 )
-  ( 3 N-000055 )
-  ( 4 N-000051 )
-  ( 5 /Audio_Pipeline/AUDIO1_MONITOR )
-  ( 6 /Audio_Pipeline/AUDIO1_MONITOR )
-  ( 7 /Audio_Pipeline/AUDIO0_MONITOR )
-  ( 8 /Audio_Pipeline/AUDIO0_MONITOR )
+ ( /4FC20B69 SM1206 R13 10K
+  ( 1 +5V )
+  ( 2 N-000008 )
  )
- ( /4F8E1AA2/4F8E114E $noname$ RP2 1K
-  ( 1 N-000054 )
-  ( 2 N-000050 )
-  ( 3 N-000053 )
-  ( 4 N-000049 )
-  ( 5 /Audio_Pipeline/AUDIO3_MONITOR )
-  ( 6 /Audio_Pipeline/AUDIO3_MONITOR )
-  ( 7 /Audio_Pipeline/AUDIO2_MONITOR )
-  ( 8 /Audio_Pipeline/AUDIO2_MONITOR )
+ ( /4FCEBE8F $noname$ R14 10K
+  ( 1 +5V )
+  ( 2 /SEG_0 )
  )
- ( /4F896F9C $noname$ SERIAL1 CONN_6
+ ( /4FCEBE70 $noname$ R15 10K
+  ( 1 +5V )
+  ( 2 /SEG_1 )
+ )
+ ( /4F896F9C PIN_ARRAY-6X1 SERIAL1 CONN_6
   ( 1 GND )
   ( 2 GND )
   ( 3 +5V )
-  ( 4 N-000023 )
-  ( 5 N-000024 )
-  ( 6 /DTR )
+  ( 4 /RX )
+  ( 5 /TX )
+  ( 6 N-000026 )
  )
  ( /4F8652D3 $noname$ SW1 SPST
   ( 1 GND )
-  ( 2 N-000031 )
+  ( 2 /RESET )
  )
- ( /4F90D968 SO16N U1 TL7705
+ ( /4F90D968 SO8E U1 TL7705
   ( 1 +5V )
-  ( 2 +5V )
-  ( 3 N-000028 )
+  ( 2 /RESET )
+  ( 3 N-000002 )
   ( 4 GND )
-  ( 5 N-000031 )
-  ( 6 N-000026 )
+  ( 5 N-000004 )
+  ( 6 N-000003 )
   ( 7 +5V )
   ( 8 +5V )
  )
- ( /4F920A8B/4F949FE4 $noname$ U2 MC34063
-  ( 1 N-000075 )
-  ( 2 N-000071 )
-  ( 3 N-000077 )
+ ( /4F920A8B/4F949FE4 SO8N U2 MC34063
+  ( 1 N-000070 )
+  ( 2 N-000062 )
+  ( 3 N-000069 )
   ( 4 GND )
-  ( 5 N-000070 )
+  ( 5 N-000059 )
   ( 6 +12V )
-  ( 7 N-000075 )
-  ( 8 N-000075 )
+  ( 7 N-000070 )
+  ( 8 N-000070 )
  )
- ( /4F920A8B/4F94A7C2 $noname$ U3 MC34063
-  ( 1 N-000062 )
-  ( 2 N-000060 )
-  ( 3 N-000063 )
-  ( 4 N-000065 )
-  ( 5 N-000065 )
+ ( /4F920A8B/4F94A7C2 SO8N U3 MC34063
+  ( 1 N-000061 )
+  ( 2 N-000058 )
+  ( 3 N-000057 )
+  ( 4 N-000063 )
+  ( 5 N-000063 )
   ( 6 +12V )
-  ( 7 N-000062 )
-  ( 8 N-000062 )
+  ( 7 N-000061 )
+  ( 8 N-000061 )
  )
- ( /4F920A8B/4F921EE8 MODULE U4 BP5037
+ ( /4F920A8B/4F921EE8 BP5037 U4 BP5037
   ( 1 +12V )
-  ( 3 N-000076 )
-  ( 5 N-000068 )
+  ( 3 N-000075 )
+  ( 5 N-000064 )
   ( 7 GND )
-  ( 10 N-000069 )
+  ( 10 N-000068 )
  )
- ( /4F8E1AA2/4F88F500 MODULE U_MUX1 MAX4582
-  ( 1 N-000052 )
-  ( 2 N-000050 )
-  ( 3 N-000048 )
-  ( 4 N-000049 )
-  ( 5 N-000051 )
-  ( 6 /Power_Supply/AMP_ENABLE )
+ ( /4F8E1AA2/4F88F500 SO16N U5 MAX4582
+  ( 1 N-000053 )
+  ( 2 N-000052 )
+  ( 3 N-000047 )
+  ( 4 N-000048 )
+  ( 5 N-000049 )
+  ( 6 ? )
   ( 7 -5V )
   ( 8 GND )
   ( 9 +5V )
-  ( 10 N-000054 )
-  ( 11 N-000055 )
-  ( 12 N-000056 )
-  ( 13 N-000059 )
-  ( 14 N-000053 )
-  ( 15 /Audio_Pipeline/MUX_A )
-  ( 16 /Audio_Pipeline/MUX_B )
+  ( 10 /Audio_Pipeline/AUDIO2_MONITOR )
+  ( 11 /Audio_Pipeline/AUDIO1_MONITOR )
+  ( 12 N-000051 )
+  ( 13 /Audio_Pipeline/AUDIO0_MONITOR )
+  ( 14 /Audio_Pipeline/AUDIO3_MONITOR )
+  ( 15 ? )
+  ( 16 ? )
  )
- ( /4F8E1AA2/4F8E0BE3 SO16E U_VOL1 DS1882
+ ( /4F8E1AA2/4F8E0BE3 SO16N U6 DS1882
   ( 1 GND )
   ( 2 GND )
   ( 3 GND )
   ( 4 -5V )
   ( 5 GND )
-  ( 6 N-000058 )
+  ( 6 N-000054 )
   ( 7 GND )
-  ( 8 N-000056 )
+  ( 8 N-000051 )
   ( 9 GND )
-  ( 10 N-000048 )
-  ( 11 N-000057 )
-  ( 12 GND )
+  ( 10 N-000047 )
+  ( 11 N-000055 )
+  ( 12 ? )
   ( 13 /Audio_Pipeline/SDA )
-  ( 14 /Display/SCL )
+  ( 14 /Audio_Pipeline/SCL )
   ( 15 +5V )
   ( 16 +5V )
  )
  ( /4F920A8B/4F933EE0 $noname$ VR1 VR
-  ( 1 N-000073 )
+  ( 1 N-000065 )
   ( 2 GND )
  )
 )
@@ -457,6 +475,10 @@ $component D4
  D?
  S*
 $endlist
+$component IC1
+ 40DIP-ELL600
+ 40dip600
+$endlist
 $component R1
  R?
  SM0603
@@ -535,6 +557,27 @@ $component R11
  SM1206
 $endlist
 $component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R15
  R?
  SM0603
  SM0805
