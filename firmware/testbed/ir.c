@@ -1,6 +1,7 @@
 
 #include <string.h>
 #include <avr/interrupt.h>
+#include <avr/io.h>
 #include "ir.h"
 
 #ifdef IR_PRINT
