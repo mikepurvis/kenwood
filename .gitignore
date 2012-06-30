@@ -1,3 +1,10 @@
 log.txt
 *.bak
 .DS_Store
+*.lst
+*.o
+*.hex
+*.eep
+*.elf
+*.map
+*.sym
