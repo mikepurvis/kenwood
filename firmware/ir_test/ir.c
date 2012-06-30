@@ -1,7 +1,6 @@
 
 #include <stdio.h>
 #include <string.h>
-// #include <avr/io.h>
 #include <avr/interrupt.h>
 
 #include "ir.h"
@@ -50,7 +49,7 @@ void set_state(state_t new_state) {
     case STATE_DONE:
       // Timer off, interrupt off.
       cbi(TCCR1B, CS12);
-      sbi(EIMSK, INT0);
+      cbi(EIMSK, INT0);
   }
 }
 
