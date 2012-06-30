@@ -1,9 +1,11 @@
 
-#include <stdio.h>
 #include <string.h>
 #include <avr/interrupt.h>
-
 #include "ir.h"
+
+#ifdef IR_PRINT
+#include <stdio.h>
+#endif
 
 #define sbi(var, mask)   (var |= (uint8_t)(1 << (mask)))
 #define cbi(var, mask)   (var &= (uint8_t)~(1 << (mask)))
@@ -72,13 +74,16 @@ ISR(TIMER1_COMPA_vect) {
 
       // Terminate string.
       _stream[_stream_index] = 0;
+
+#ifdef IR_PRINT
       char out_str[20];
       for (i = 0; i < _stream_index; i++) {
         out_str[i] = '0' + _stream[i];
       }
       out_str[i] = 0;
       printf("S: %s\n", out_str);
-      
+#endif
+
       i = 0;
       while (1) {
         struct ir_callback_s* cb = &_callbacks[i];
