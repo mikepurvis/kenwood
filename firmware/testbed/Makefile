@@ -61,7 +61,7 @@ TARGET = firmware
 
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC = main.c ir.c
+SRC = main.c ir.c adc.c
 
 
 # List Assembler source files here.

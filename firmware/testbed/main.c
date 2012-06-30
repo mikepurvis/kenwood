@@ -16,7 +16,9 @@
 #include <util/delay.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
+
 #include "ir.h"
+#include "adc.h"
 
 #define BAUD 38400
   //9600
@@ -120,18 +122,3 @@ uint8_t uart_getchar(void) {
 }
 
 
-void adc_init() {
-    PORTC = 0x00;  // Pull-up resistors off, just in case.
-    DDRC = 0x00;  // Set Port A to input
-
-    ADMUX = 0;
-    sbi(ADMUX, REFS0);
-    cbi(ADMUX, REFS1);
-    //ADMUX |= (1 << REFS0);  // Set ADC reference voltage (to vcc)
-    //ADMUX |= (1 << ADLAR);  // Select 8-bit mode (over 10-bit)
-
-    ADCSRA = 0;
-    ADCSRB = 0;
-    ADCSRA |= 7;  // Set prescaler to 128
-    ADCSRA |= (1 << ADEN);  // Enable ADC
-} 
