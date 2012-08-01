@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 7/31/2012 11:17:11 PM
+EESchema Schematic File Version 2  date 8/1/2012 10:20:13 AM
 LIBS:atmel
 LIBS:device
 LIBS:regul

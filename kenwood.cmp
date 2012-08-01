@@ -1,18 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 7/31/2012 11:13:10 PM
-
-BeginCmp
-TimeStamp = /4F86BAC4;
-Reference = C1;
-ValeurCmp = 22P;
-IdModule  = SM0603_Capa;
-EndCmp
-
-BeginCmp
-TimeStamp = /4F86BAB8;
-Reference = C2;
-ValeurCmp = 22P;
-IdModule  = SM0603_Capa;
-EndCmp
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 8/1/2012 7:17:11 AM
 
 BeginCmp
 TimeStamp = /4F897C0E;
@@ -36,31 +22,17 @@ IdModule  = SM0603_Capa;
 EndCmp
 
 BeginCmp
-TimeStamp = /501890BE;
-Reference = C6;
-ValeurCmp = C;
-IdModule  = SM0603_Capa;
-EndCmp
-
-BeginCmp
-TimeStamp = /501890C3;
-Reference = C7;
-ValeurCmp = C;
-IdModule  = SM0603_Capa;
-EndCmp
-
-BeginCmp
-TimeStamp = /501890C4;
-Reference = C8;
-ValeurCmp = C;
-IdModule  = SM0603_Capa;
-EndCmp
-
-BeginCmp
 TimeStamp = /4FF47655;
 Reference = C15;
 ValeurCmp = 0.2u;
 IdModule  = C1V7H;
+EndCmp
+
+BeginCmp
+TimeStamp = /50190FB7;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
 EndCmp
 
 BeginCmp
@@ -71,10 +43,10 @@ IdModule  = PEC11L;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FC169C5;
+TimeStamp = /5019094B;
 Reference = IC1;
-ValeurCmp = ATMEGA164PA-A;
-IdModule  = TQFP44;
+ValeurCmp = ATMEGA168-A;
+IdModule  = TQFP32;
 EndCmp
 
 BeginCmp
@@ -162,13 +134,6 @@ IdModule  = 1pin;
 EndCmp
 
 BeginCmp
-TimeStamp = /4F8650FF;
-Reference = Q1;
-ValeurCmp = CRYSTAL;
-IdModule  = HC-49V;
-EndCmp
-
-BeginCmp
 TimeStamp = /4F86511C;
 Reference = R1;
 ValeurCmp = 10K;
@@ -194,6 +159,13 @@ TimeStamp = /4F8E13B2;
 Reference = R4;
 ValeurCmp = 1K;
 IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /50190FC6;
+Reference = R5;
+ValeurCmp = 100;
+IdModule  = ;
 EndCmp
 
 BeginCmp

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 7/31/2012 11:17:11 PM
+EESchema Schematic File Version 2  date 8/1/2012 10:20:13 AM
 LIBS:atmel
 LIBS:device
 LIBS:regul
@@ -33,10 +33,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 2650 4700
 Wire Wire Line
-	8400 2300 4150 2300
+	2800 4700 2650 4700
+Connection ~ 4800 3700
 Wire Wire Line
-	4150 2100 8400 2100
+	5700 3700 4800 3700
+Wire Wire Line
+	4150 2300 6350 2300
+Wire Wire Line
+	4150 2100 5000 2100
 Wire Wire Line
 	5350 6000 5600 6000
 Wire Wire Line
@@ -75,7 +81,7 @@ Wire Wire Line
 	4150 2600 4350 2600
 Connection ~ 4300 2000
 Wire Wire Line
-	4300 2000 4300 850 
+	4300 850  4300 2000
 Wire Wire Line
 	4300 850  4450 850 
 Wire Wire Line
@@ -103,16 +109,12 @@ Connection ~ 4600 4900
 Wire Wire Line
 	2800 4300 2650 4300
 Wire Wire Line
-	2650 4300 2650 4600
-Wire Wire Line
 	2800 4500 2650 4500
 Connection ~ 2650 4500
 Wire Wire Line
 	1450 4900 2800 4900
 Wire Wire Line
 	2450 2000 2150 2000
-Wire Wire Line
-	2800 4700 1450 4700
 Wire Wire Line
 	4450 1150 4350 1150
 Wire Wire Line
@@ -163,9 +165,18 @@ Wire Wire Line
 Wire Wire Line
 	5650 6400 5350 6400
 Wire Wire Line
-	8400 2000 4150 2000
+	4300 2000 4150 2000
 Wire Wire Line
-	8400 2200 4150 2200
+	5650 2200 4150 2200
+Wire Wire Line
+	5700 3550 4750 3550
+Connection ~ 4750 3550
+Wire Wire Line
+	2650 4300 2650 5050
+Text HLabel 5700 3700 2    60   Output ~ 0
+MONITOR_R
+Text HLabel 5700 3550 2    60   Output ~ 0
+MONITOR_L
 $Comp
 L -5V #PWR024
 U 1 1 50078B5A
@@ -285,16 +296,6 @@ F 1 "CONN_4" V 4850 1000 50  0000 C CNN
 	1    4800 1000
 	1    0    0    -1  
 $EndComp
-Text HLabel 1450 4700 0    60   Input ~ 0
-~SCE
-Text HLabel 8400 2000 2    60   Output ~ 0
-AUDIO0_MONITOR
-Text HLabel 8400 2100 2    60   Output ~ 0
-AUDIO1_MONITOR
-Text HLabel 8400 2200 2    60   Output ~ 0
-AUDIO2_MONITOR
-Text HLabel 8400 2300 2    60   Output ~ 0
-AUDIO3_MONITOR
 $Comp
 L GND #PWR031
 U 1 1 4F8F6783
@@ -352,10 +353,10 @@ $EndComp
 $Comp
 L GND #PWR035
 U 1 1 4F8E0C00
-P 2650 4600
-F 0 "#PWR035" H 2650 4600 30  0001 C CNN
-F 1 "GND" H 2650 4530 30  0001 C CNN
-	1    2650 4600
+P 2650 5050
+F 0 "#PWR035" H 2650 5050 30  0001 C CNN
+F 1 "GND" H 2650 4980 30  0001 C CNN
+	1    2650 5050
 	1    0    0    -1  
 $EndComp
 $Comp
