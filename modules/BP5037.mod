@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  6/4/2012 8:42:51 PM
+PCBNEW-LibModule-V1  7/7/2012 2:12:51 PM
 # encoding utf-8
 $INDEX
 BP5037
@@ -61,7 +61,7 @@ Po 4500 0
 $EndPAD
 $EndMODULE  SIL-10
 $MODULE BP5037
-Po 0 0 0 15 4FCD544E 00000000 ~~
+Po 0 0 0 15 4FF87C13 00000000 ~~
 Li BP5037
 Cd Connecteur 10 pins
 Kw CONN DEV
@@ -76,44 +76,44 @@ DS 5000 -500 5000 500 120 21
 DS 5000 500 -5000 500 120 21
 DS -4000 500 -4000 -500 120 21
 $PAD
-Sh "1" R 550 550 0 0 0
+Sh "1" R 787 787 0 0 0
 Dr 320 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po -4500 0
-.LocalClearance 787
+.LocalClearance 197
 $EndPAD
 $PAD
-Sh "3" C 550 550 0 0 0
+Sh "3" C 787 787 0 0 0
 Dr 320 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po -2500 0
-.LocalClearance 787
+.LocalClearance 197
 $EndPAD
 $PAD
-Sh "5" C 550 550 0 0 0
+Sh "5" C 787 787 0 0 0
 Dr 320 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po -500 0
-.LocalClearance 787
+.LocalClearance 197
 $EndPAD
 $PAD
-Sh "7" C 550 550 0 0 0
+Sh "7" C 787 787 0 0 0
 Dr 320 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po 1500 0
-.LocalClearance 787
+.LocalClearance 197
 $EndPAD
 $PAD
-Sh "10" C 550 550 0 0 0
+Sh "10" C 787 787 0 0 0
 Dr 320 0 0
 At STD N 00E0FFFF
 Ne 0 ""
 Po 4500 0
-.LocalClearance 1181
+.LocalClearance 197
 $EndPAD
 $EndMODULE  BP5037
 $EndLIBRARY
