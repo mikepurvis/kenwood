@@ -1,4 +1,18 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 8/1/2012 4:48:56 PM
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 8/1/2012 10:55:54 PM
+
+BeginCmp
+TimeStamp = /4F920A8B/5019EAA1;
+Reference = C1;
+ValeurCmp = 15u;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F920A8B/5019EAB5;
+Reference = C2;
+ValeurCmp = 15u;
+IdModule  = SM0603_Capa;
+EndCmp
 
 BeginCmp
 TimeStamp = /4F897C0E;
@@ -10,7 +24,7 @@ EndCmp
 BeginCmp
 TimeStamp = /501890B5;
 Reference = C5;
-ValeurCmp = 500nF;
+ValeurCmp = 500n;
 IdModule  = SM0603_Capa;
 EndCmp
 
@@ -120,13 +134,6 @@ IdModule  = 1pin;
 EndCmp
 
 BeginCmp
-TimeStamp = /5011FA13;
-Reference = P9;
-ValeurCmp = CONN_1;
-IdModule  = 1pin;
-EndCmp
-
-BeginCmp
 TimeStamp = /50198BC9;
 Reference = R1;
 ValeurCmp = 10k;
@@ -152,6 +159,13 @@ TimeStamp = /4F896F9C;
 Reference = SERIAL1;
 ValeurCmp = CONN_6;
 IdModule  = SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4F920A8B/5019E9C9;
+Reference = U1;
+ValeurCmp = MAX660;
+IdModule  = SO8E;
 EndCmp
 
 BeginCmp

@@ -1,4 +1,4 @@
-update=7/31/2012 9:59:39 PM
+update=8/1/2012 11:21:26 PM
 last_client=eeschema
 [general]
 version=1
@@ -108,3 +108,4 @@ LibName16=TSOP382
 LibName17=g5la-1
 LibName18=RC4580
 LibName19=DMP2066LSD
+LibName20=MAX660

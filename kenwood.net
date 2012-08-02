@@ -1,10 +1,18 @@
-# EESchema Netlist Version 1.1 created  8/1/2012 4:48:56 PM
+# EESchema Netlist Version 1.1 created  8/1/2012 10:55:54 PM
 (
+ ( /4F920A8B/5019EAA1 SM0603_Capa C1 15u
+  ( 1 N-000050 )
+  ( 2 N-000049 )
+ )
+ ( /4F920A8B/5019EAB5 SM0603_Capa C2 15u
+  ( 1 -5V )
+  ( 2 GND )
+ )
  ( /4F897C0E SM0603_Capa C3 0.1u
-  ( 1 N-000017 )
+  ( 1 N-000014 )
   ( 2 /RESET )
  )
- ( /501890B5 SM0603_Capa C5 500nF
+ ( /501890B5 SM0603_Capa C5 500n
   ( 1 +5V )
   ( 2 GND )
  )
@@ -78,7 +86,7 @@
   ( 10 /LED_B )
   ( 11 /LED_A )
   ( 12 /LED_F )
-  ( 13 N-000025 )
+  ( 13 N-000024 )
   ( 14 N-000011 )
   ( 15 /LED_B )
   ( 16 /LED_A )
@@ -95,7 +103,7 @@
   ( 1 N-000044 )
   ( 2 GND )
   ( 3 GND )
-  ( 4 N-000035 )
+  ( 4 N-000034 )
  )
  ( /4F8E1AA2/5007646A CONN_MPC2 P2 CONN_4
   ( 1 N-000041 )
@@ -107,7 +115,7 @@
   ( 1 N-000036 )
   ( 2 GND )
   ( 3 GND )
-  ( 4 N-000034 )
+  ( 4 N-000035 )
  )
  ( /4F8E1AA2/50076477 CONN_MPC2 P4 CONN_4
   ( 1 N-000042 )
@@ -130,9 +138,6 @@
  ( /5011FA11 1pin P8 CONN_1
   ( 1 GND )
  )
- ( /5011FA13 1pin P9 CONN_1
-  ( 1 GND )
- )
  ( /50198BC9 SM0603_Resistor R1 10k
   ( 1 +5V )
   ( 2 /RESET )
@@ -151,7 +156,17 @@
   ( 3 +5V )
   ( 4 /RX )
   ( 5 /TX )
-  ( 6 N-000017 )
+  ( 6 N-000014 )
+ )
+ ( /4F920A8B/5019E9C9 SO8E U1 MAX660
+  ( 1 +5V )
+  ( 2 N-000050 )
+  ( 3 GND )
+  ( 4 N-000049 )
+  ( 5 -5V )
+  ( 6 ? )
+  ( 7 ? )
+  ( 8 +5V )
  )
  ( /50188D0E SO8E U2 DMP2066LSD
   ( 1 +5V )
@@ -160,8 +175,8 @@
   ( 4 /SEG_0 )
   ( 5 N-000011 )
   ( 6 N-000011 )
-  ( 7 N-000025 )
-  ( 8 N-000025 )
+  ( 7 N-000024 )
+  ( 8 N-000024 )
  )
  ( /4F920A8B/50189D6F SO8E U3 DMP2066LSD
   ( 1 +5V )
@@ -174,8 +189,8 @@
   ( 8 /Power_Supply/AMP_RELAY_COIL )
  )
  ( /4F8E1AA2/4F88F500 SO16E U5 MAX4582
-  ( 1 N-000035 )
-  ( 2 N-000034 )
+  ( 1 N-000034 )
+  ( 2 N-000035 )
   ( 3 /Audio_Pipeline/MONITOR_R )
   ( 4 N-000038 )
   ( 5 N-000043 )
@@ -227,6 +242,16 @@
 )
 *
 { Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
 $component C3
  SM*
  C?
