@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  8/3/2012 1:07:28 PM
+# EESchema Netlist Version 1.1 created  8/3/2012 4:13:05 PM
 (
  ( /501BFC5D $noname  U4 MC33064D {Lib=MC33064D}
   (    1 /RESET )
@@ -84,7 +84,7 @@
   (    1 N-000028 )
   (    2 GND )
  )
- ( /4FF21962 $noname  R13 100 {Lib=R}
+ ( /4FF21962 $noname  R13 330 {Lib=R}
   (    1 +5V )
   (    2 N-000028 )
  )
