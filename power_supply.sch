@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 8/3/2012 4:17:04 PM
+EESchema Schematic File Version 2  date 8/7/2012 1:04:39 PM
 LIBS:atmel
 LIBS:device
 LIBS:regul
@@ -15,7 +15,7 @@ LIBS:MCP23017
 LIBS:lumex
 LIBS:PEC11L
 LIBS:TSOP382
-LIBS:g5la-1
+LIBS:G5LA-1
 LIBS:RC4580
 LIBS:DMP2066LSD
 LIBS:MAX660
@@ -26,7 +26,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 3 3
 Title ""
-Date "3 aug 2012"
+Date "7 aug 2012"
 Rev ""
 Comp ""
 Comment1 ""
