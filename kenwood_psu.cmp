@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 8/19/2012 6:57:21 PM
+
+BeginCmp
+TimeStamp = /502460B5;
+Reference = C1;
+ValeurCmp = 330u;
+IdModule  = C1V7;
+EndCmp
+
+BeginCmp
+TimeStamp = /50203450;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = SOT23;
+EndCmp
+
+BeginCmp
+TimeStamp = /50203484;
+Reference = F1;
+ValeurCmp = 1A;
+IdModule  = FUSE-0751.0110;
+EndCmp
+
+BeginCmp
+TimeStamp = /5031371C;
+Reference = K1;
+ValeurCmp = T77;
+IdModule  = T77;
+EndCmp
+
+BeginCmp
+TimeStamp = /50203044;
+Reference = P1;
+ValeurCmp = CONN_1;
+IdModule  = QC-025-M-VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /50203098;
+Reference = P2;
+ValeurCmp = CONN_1;
+IdModule  = QC-025-M-VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /50203102;
+Reference = P3;
+ValeurCmp = CONN_1;
+IdModule  = QC-025-M-VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /50203107;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = QC-025-M-VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /50203313;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = QC-025-M-VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /50203167;
+Reference = P7;
+ValeurCmp = CONN_4;
+IdModule  = CONN_MPC2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5023D095;
+Reference = P8;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5023D0A5;
+Reference = P9;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /50226242;
+Reference = U1;
+ValeurCmp = RAC02;
+IdModule  = RAC02;
+EndCmp
+
+BeginCmp
+TimeStamp = /50245F5E;
+Reference = VR1;
+ValeurCmp = VR;
+IdModule  = C2;
+EndCmp
+
+EndListe

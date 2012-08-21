@@ -1,0 +1,102 @@
+# EESchema Netlist Version 1.1 created  8/20/2012 10:58:12 AM
+(
+ ( /5031371C $noname  K1 T77 {Lib=T77}
+  (    1 N-000006 )
+  (    2 GND )
+  (    3 /AC_H_OUT )
+  (    4 /AC_H_FUSED )
+ )
+ ( /502460B5 $noname  C1 330u {Lib=CP1}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /50245F5E $noname  VR1 VR {Lib=VR}
+  (    1 /AC_H_FUSED )
+  (    2 /AC_N )
+ )
+ ( /5023D0A5 $noname  P9 CONN_1 {Lib=CONN_1}
+  (    1 ? )
+ )
+ ( /5023D095 $noname  P8 CONN_1 {Lib=CONN_1}
+  (    1 GND )
+ )
+ ( /50226242 MODULE  U1 RAC02 {Lib=RAC02}
+  (    1 /AC_N )
+  (    2 /AC_H_FUSED )
+  (    3 GND )
+  (    4 +5V )
+ )
+ ( /50203484 $noname  F1 1A {Lib=FUSE}
+  (    1 /AC_H )
+  (    2 /AC_H_FUSED )
+ )
+ ( /50203450 $noname  D1 DIODE {Lib=DIODE}
+  (    1 GND )
+  (    2 N-000006 )
+ )
+ ( /50203313 $noname  P5 CONN_1 {Lib=CONN_1}
+  (    1 /AC_N )
+ )
+ ( /50203167 $noname  P7 CONN_4 {Lib=CONN_4}
+  (    1 N-000006 )
+  (    2 GND )
+  (    3 GND )
+  (    4 +5V )
+ )
+ ( /50203107 $noname  P4 CONN_1 {Lib=CONN_1}
+  (    1 /AC_H_OUT )
+ )
+ ( /50203098 $noname  P2 CONN_1 {Lib=CONN_1}
+  (    1 /AC_N )
+ )
+ ( /50203044 $noname  P1 CONN_1 {Lib=CONN_1}
+  (    1 /AC_H )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ CP*
+ SM*
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 2 "/AC_H_FUSED" "AC_H_FUSED"
+ K1 4
+ VR1 1
+ F1 2
+ U1 2
+Net 3 "GND" "GND"
+ D1 1
+ K1 2
+ P7 2
+ P7 3
+ C1 2
+ P8 1
+ U1 3
+Net 4 "+5V" "+5V"
+ C1 1
+ U1 4
+ P7 4
+Net 5 "/AC_H" "AC_H"
+ P1 1
+ F1 1
+Net 6 "" ""
+ K1 1
+ P7 1
+ D1 2
+Net 7 "/AC_H_OUT" "AC_H_OUT"
+ P4 1
+ K1 3
+Net 8 "/AC_N" "AC_N"
+ U1 1
+ VR1 2
+ P5 1
+ P2 1
+}
+#End
