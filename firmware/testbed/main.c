@@ -7,11 +7,7 @@
 #include "ir.h"
 #include "adc.h"
 #include "uart.h"
-
-#define sbi(var, mask)   (var |= (uint8_t)(1 << (mask)))
-#define cbi(var, mask)   (var &= (uint8_t)~(1 << (mask)))
-
-#define STATUS_LED 0
+#include "ss.h"
 
 
 void btn_power(void) { printf("PWR\n"); }
@@ -26,17 +22,22 @@ const struct ir_callback_s ir_cbs[] = {
 };
 
 
+
 int main (void) {
-	  uint16_t x = 0;
+    uint16_t x = 0;
     uint8_t channel = 0;
-	
-    uart_init(); //Setup IO pins and defaults
-    adc_init();
-    ir_init(ir_cbs);
+
+    // Set heartbeat pin as an output.
+    DDRD |= _BV(PD4);
+
+    //uart_init(); //Setup IO pins and defaults
+    //adc_init();
+    //ir_init(ir_cbs);
+    ss_init();
     
-    PORTD=0x00;
-    DDRD=0b00000010;
     sei();
+    
+    uint8_t counter = 0;
 
     while(1) {
         // Select channel for conversion
@@ -61,8 +62,20 @@ int main (void) {
             printf("\n");
             pulses_done = 0;
         }*/
+        PORTD |= _BV(PD4);
+        _delay_ms(50);
+        PORTD &= ~_BV(PD4);
+        _delay_ms(50);
+        
+        if (++counter >= 100) counter = 0; 
+        ss_display[0] = ss_digits[counter / 10];
+        ss_display[1] = ss_digits[counter % 10];
+        if (counter < 20) ss_pulse = PULSE_BRIGHT; else ss_pulse = PULSE_DIM;
     }
    
     return(0);
 }
+
+
+
 
