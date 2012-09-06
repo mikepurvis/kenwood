@@ -108,7 +108,7 @@ ISR(TIMER1_COMPA_vect) {
 }
 
 
-ISR(INT0_vect) {
+ISR(INT1_vect) {
   switch (_state) {
     case STATE_IDLE:
       // Initial falling edge.
