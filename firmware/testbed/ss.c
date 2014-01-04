@@ -66,8 +66,8 @@ ISR(TIMER0_OVF_vect) {
     if (_ticks_bright > 0) {
         _ticks_bright--;
         pulse = PULSE_BRIGHT;
-        if (_ticks_bright < (PULSE_BRIGHT - PULSE_DIM)) {
-          pulse = PULSE_DIM + _ticks_bright;
+        if (_ticks_bright < (PULSE_BRIGHT - PULSE_DIM)*3) {
+          pulse = PULSE_DIM + _ticks_bright/3;
         }
     }
 
